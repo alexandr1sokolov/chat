@@ -17,11 +17,11 @@
     "styled-components": "^3.2.5"
   },
   "scripts": {
-    "start": "react-scripts build && cd server && node app.js",
+    "start": "cd server && node app.js",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm install && npm run build && npm run start"
+    "heroku-postbuild": "npm install && npm run build"
   },
   "proxy": "http://localhost:9988"
 }
